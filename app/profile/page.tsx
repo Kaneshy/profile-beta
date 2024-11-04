@@ -1,9 +1,6 @@
 'use client'
 import PhotosMain from "@/components/main/photos"
 import ProfileMain from "@/components/main/profile"
-import PostInput from "@/components/Post/postInput"
-import { Button } from "@/components/ui/button"
-import {Edit, MessageCircle, MoreHorizontal, UserPlus } from "lucide-react"
 import { useState } from "react"
 
 
@@ -65,7 +62,7 @@ export default function Component() {
                     </div>
                     <div className="mt-6 sm:flex-1 sm:min-w-0 sm:flex sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
 
-                      <div className="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
+                      {/* <div className="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
                         <Button>
                           <Edit className="mr-2 h-4 w-4" />
                           Edit profile
@@ -84,16 +81,16 @@ export default function Component() {
                           <MoreHorizontal className="h-4 w-4" />
                           <span className="sr-only">More options</span>
                         </Button>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
 
                 </div>
-                {newPostInput && (
+                {/* {newPostInput && (
                   <div className="flex  flex-col pb-16">
                     <PostInput />
                   </div>
-                )}
+                )} */}
                 <div className="p-2 sticky z-50 bg-black bg-opacity-75 text-xs top-0 flex justify-evenly">
                   {sections.map(({ id, label }) => (
                     <div key={id} onClick={() => setsectionChoose(id)}>

@@ -1,5 +1,4 @@
 'use client'
-import PostInput from "@/components/Post/postInput"
 import ArtWork from "@/components/sections/artWork"
 import BadgesSection from "@/components/sections/badgesSection"
 import TabsBPage from "@/components/sections/tabsDuo"
