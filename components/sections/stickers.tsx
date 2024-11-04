@@ -31,16 +31,10 @@ const StickersSection = ({ idBadget }: BadgesSectionProps) => {
         console.log(33444, res)
       }
       fetchOne()
-    }, [])
-    
-
-    interface Image {
-        id: number;
-        src: string;
-        alt: string;
-    }
+    }, [idBadget])
     
     
+ 
     const [dropdown, setDropdown] = useState<boolean>(false);
 
 

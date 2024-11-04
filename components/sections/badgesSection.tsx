@@ -31,33 +31,10 @@ const BadgesSection = ({ idBadget }: BadgesSectionProps) => {
         console.log(33444, res)
       }
       fetchOne()
-    }, [])
+    }, [idBadget])
     
 
-    interface Image {
-        id: number;
-        src: string;
-        alt: string;
-    }
-    const images: Image[] = [
-        { id: 1, src: '/images/image1.jpg', alt: 'Image 1' },
-        { id: 2, src: '/images/image2.jpg', alt: 'Image 2' },
-        { id: 3, src: '/images/image3.jpg', alt: 'Image 3' },
-        { id: 4, src: '/images/image4.jpg', alt: 'Image 4' },
-        { id: 5, src: '/images/image5.jpg', alt: 'Image 5' },
-        { id: 6, src: '/images/image6.jpg', alt: 'Image 6' },
-        { id: 6, src: '/images/image6.jpg', alt: 'Image 6' },
-        { id: 6, src: '/images/image6.jpg', alt: 'Image 6' },
-        { id: 6, src: '/images/image6.jpg', alt: 'Image 6' },
-        { id: 6, src: '/images/image6.jpg', alt: 'Image 6' },
-        { id: 6, src: '/images/image6.jpg', alt: 'Image 6' },
-        { id: 6, src: '/images/image6.jpg', alt: 'Image 6' },
-        { id: 6, src: '/images/image6.jpg', alt: 'Image 6' },
-        { id: 6, src: '/images/image6.jpg', alt: 'Image 6' },
-        { id: 6, src: '/images/image6.jpg', alt: 'Image 6' }
-    ];
-    
-    
+
     const [dropdown, setDropdown] = useState<boolean>(false);
 
     return (
