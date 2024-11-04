@@ -58,10 +58,7 @@ const BadgesSection = ({ idBadget }: BadgesSectionProps) => {
     ];
     
     
-    const [hoverCard, sethoverCard] = useState<boolean>(false);
     const [dropdown, setDropdown] = useState<boolean>(false);
-
-
 
     return (
         <div>

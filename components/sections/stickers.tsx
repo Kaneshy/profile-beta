@@ -39,10 +39,8 @@ const StickersSection = ({ idBadget }: BadgesSectionProps) => {
         src: string;
         alt: string;
     }
-
     
     
-    const [hoverCard, sethoverCard] = useState<boolean>(false);
     const [dropdown, setDropdown] = useState<boolean>(false);
 
 

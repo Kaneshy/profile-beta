@@ -6,7 +6,6 @@ import { useState } from "react"
 
 export default function Component() {
 
-  const [newPostInput, setnewPostInput] = useState<Boolean>(false)
   const [sectionChoose, setsectionChoose] = useState(1)
 
   const sections = [

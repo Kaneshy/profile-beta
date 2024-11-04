@@ -1,7 +1,6 @@
 'use client'
 import ArtWork from "@/components/sections/artWork"
 import BadgesSection from "@/components/sections/badgesSection"
-import TabsBPage from "@/components/sections/tabsDuo"
 import TextSection from "@/components/sections/textSection"
 import VideoSection from "@/components/sections/video"
 import Hovercard from "@/components/utils/hovercard"
