@@ -1,8 +1,7 @@
-import React, { useRef } from 'react'
+import React from 'react'
 
 const VideoSection = () => {
 
-    const videoRef = useRef(null)
 
     return (
         <div className='p-8 flex flex-col ' >

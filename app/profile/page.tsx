@@ -2,17 +2,8 @@
 import PhotosMain from "@/components/main/photos"
 import ProfileMain from "@/components/main/profile"
 import PostInput from "@/components/Post/postInput"
-import ArtWork from "@/components/sections/artWork"
-import BadgesSection from "@/components/sections/badgesSection"
-import TabsBPage from "@/components/sections/tabsDuo"
-import TextSection from "@/components/sections/textSection"
-import VideoSection from "@/components/sections/video"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import Hovercard from "@/components/utils/hovercard"
-import { Camera, Edit, MessageCircle, MoreHorizontal, UserPlus } from "lucide-react"
-import Image from "next/image"
+import {Edit, MessageCircle, MoreHorizontal, UserPlus } from "lucide-react"
 import { useState } from "react"
 
 
