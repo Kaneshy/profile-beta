@@ -141,6 +141,12 @@ export const fetchsectionBadgets = async (datafetched: Item) => {
 
     await connectToDB();
     try {
+
+        if (!datafetched?.badgets?.length) {
+            console.log("No badges to fetch.");
+            return []; // Return an empty array if there are no badges
+        }
+        
         const results = await Promise.all(
             datafetched?.badgets.map(async (x) => {
                 console.log(x._id); // Log each badge's _id
