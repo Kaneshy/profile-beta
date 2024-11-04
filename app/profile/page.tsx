@@ -42,8 +42,9 @@ export default function Component() {
                   <div className=" sm:items-end sm:space-x-5 relative -mt-16 sm:-mt-20">
                     <div className="relative   flex">
                       <img
+                        alt=""
                         className=" absolute -left-4 -top-4  h-32 w-32 sm:h-40 sm:w-40  "
-                        src="https://res.cloudinary.com/dztz492su/image/upload/v1729301295/books/n09zznudbktfv9hrntbw.png" alt="" />
+                        src="https://res.cloudinary.com/dztz492su/image/upload/v1729301295/books/n09zznudbktfv9hrntbw.png"/>
                       <img
                         src="https://res.cloudinary.com/dztz492su/image/upload/v1728320654/books/h4oczmxrpfnvsf1vcezc.png"
                         alt="Profile picture"

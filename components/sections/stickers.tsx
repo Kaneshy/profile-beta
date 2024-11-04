@@ -62,6 +62,7 @@ const StickersSection = ({ idBadget }: BadgesSectionProps) => {
                                 key={index}
                                 className="relative flex items-center group  justify-center w-full h-20">
                                 <img
+                                alt=""
                                     src={image.img}
                                     className="rounded-lg w-20"
                                 />

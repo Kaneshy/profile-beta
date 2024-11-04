@@ -25,14 +25,14 @@ const BadgesSection = ({ idBadget }: BadgesSectionProps) => {
     const [datafetched, setdatafetched] = useState<Item[]>([])
 
     useEffect(() => {
-      const fetchOne = async () => {
-        const res = await fetchOneBadget(idBadget)
-        setdatafetched(res)
-        console.log(33444, res)
-      }
-      fetchOne()
+        const fetchOne = async () => {
+            const res = await fetchOneBadget(idBadget)
+            setdatafetched(res)
+            console.log(33444, res)
+        }
+        fetchOne()
     }, [idBadget])
-    
+
 
 
     const [dropdown, setDropdown] = useState<boolean>(false);
@@ -54,16 +54,17 @@ const BadgesSection = ({ idBadget }: BadgesSectionProps) => {
                     className={`text-sm p-4 bg-[#000000] bg-opacity-60 overflow-hidden ${dropdown ? '' : 'max-h-[550px] select-none'} text-slate-400 min-h-[450px]   rounded-b-sm flex  `}>
 
                     <div className="grid-b p-8">
-                        {datafetched.badgets?.map((image, index:number) => (
+                        {datafetched.badgets?.map((image, index: number) => (
                             <div
-                            title="Click me!"
+                                title="Click me!"
                                 key={index}
                                 className="relative flex items-center group  justify-center w-full h-20">
                                 <img
+                                    alt=""
                                     src={image.img}
                                     className="rounded-lg w-20"
                                 />
-                               
+
                             </div>
                         ))}
                     </div>
