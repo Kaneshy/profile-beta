@@ -17,11 +17,14 @@ interface Badge {
 interface Item {
     _id: string;
     name: string;
+    desc: string;
+    img: string;
     badgets?: Badge[]; // Use optional chaining if badgets can be undefined
 }
 
 const BadgesSection = ({ idBadget }: BadgesSectionProps) => {
 
+    const [dropdown, setDropdown] = useState<boolean>(false);
     const [datafetched, setdatafetched] = useState<Item[]>([])
 
     useEffect(() => {
@@ -35,7 +38,6 @@ const BadgesSection = ({ idBadget }: BadgesSectionProps) => {
 
 
 
-    const [dropdown, setDropdown] = useState<boolean>(false);
 
     return (
         <div>
