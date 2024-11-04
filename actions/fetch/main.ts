@@ -122,6 +122,19 @@ export const fetchAllSections = async () => {
 };
 
 
+interface Badge {
+    _id: string;
+    name: string;
+    desc: string;
+    lev: number;
+    img: string;
+}
+
+interface Item {
+    _id: string;
+    name: string;
+    badgets?: Badge[]; // Use optional chaining if badgets can be undefined
+}
 
 
 export const fetchsectionBadgets = async (datafetched: Item) => {
@@ -129,7 +142,7 @@ export const fetchsectionBadgets = async (datafetched: Item) => {
     await connectToDB();
     try {
         const results = await Promise.all(
-            datafetched.badgets.map(async (x) => {
+            datafetched?.badgets.map(async (x) => {
                 console.log(x._id); // Log each badge's _id
 
                 // Fetch related badge groups
