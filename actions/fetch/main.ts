@@ -2,19 +2,14 @@
 import { connectToDB } from "@/lib/mongoose.js";
 import BadgeGroup from "../../lib/models/badget";
 import StickerGroup from "../../lib/models/stickers";
+import Tags from "../../lib/models/Tag";
 
 
 
 export const fetchOneBadget = async (id:string) => {
     await connectToDB()
     try {
-
-        console.log('Running query');
         const badgetsGroup = await StickerGroup.findById(id).sort({ updatedAt: -1 }).lean(); // Use .lean() to get plain JS objects
-
-
-        console.log(0, badgetsGroup);
-        console.log(30, JSON.parse(JSON.stringify(badgetsGroup)));
         return JSON.parse(JSON.stringify(badgetsGroup)); // Return plain, serialized data
 
     } catch (error) {
@@ -74,6 +69,34 @@ export const fetchAllGroupStickers = async () => {
         return null;
     }
 };
+
+
+
+export const fetchAllAssets = async () => {
+    await connectToDB()
+    try {
+
+        console.log('Running query');
+        const badgetsGroup = await Tags.find({ privacy: 'image' }).sort({ updatedAt: -1 }).lean(); // Use .lean() to get plain JS objects
+
+        // Transform each book document to ensure _id and date fields are plain values
+        // const badgetsGroupTransformed = badgetsGroup.map(badgets => ({
+        //     ...badgets,
+        //     _id: badgets._id.toString(), // Convert ObjectId to string
+        //     createdAt: badgets.createdAt ? badgets.createdAt.toISOString() : null, // Convert Date to string
+        //     updatedAt: badgets.updatedAt ? badgets.updatedAt.toISOString() : null // Convert Date to string
+        // }));
+
+        console.log(0, badgetsGroup);
+        console.log(30, JSON.parse(JSON.stringify(badgetsGroup)));
+        return JSON.parse(JSON.stringify(badgetsGroup)); // Return plain, serialized data
+
+    } catch (error) {
+        console.error('Error adding badges:', error);
+        return null;
+    }
+};
+
 
 export const fetchAllGroupFrames = async () => {
     await connectToDB()

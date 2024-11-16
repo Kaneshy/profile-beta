@@ -19,7 +19,7 @@ export default function Component() {
     <div>
       <div className="video-background">
         <video className="z-10 " autoPlay muted loop id="bg-video">
-          <source src="https://res.cloudinary.com/dztz492su/video/upload/v1729302276/books/nakureb7pqzxhw5ast7l.webm" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dztz492su/video/upload/v1731643974/books/ttnqs14kjgwor9ymxk4q.webm" type="video/mp4" />
           Tu navegador no soporta la etiqueta de video.
         </video>
 
@@ -33,9 +33,8 @@ export default function Component() {
             <div className="w-full flex items-center justify-center">
               <div
                 style={{
-                  background: "linear-gradient(-100deg, rgba(203, 157, 0, 0.8) 0%, rgba(231, 148, 212, 0.8) 70%, rgba(72, 92, 43, 0.8) 100%)",
                 }}
-                className="max-w-4xl  rounded-lg"
+                className="max-w-6xl  bg-radient rounded-lg"
               >
 
                 <div className="  p-4 mx-auto px-4 sm:px-6 lg:px-8 pb-8">
@@ -44,7 +43,7 @@ export default function Component() {
                       <img
                         alt=""
                         className=" absolute -left-4 -top-4  h-32 w-32 sm:h-40 sm:w-40  "
-                        src="https://res.cloudinary.com/dztz492su/image/upload/v1729301295/books/n09zznudbktfv9hrntbw.png"/>
+                        src="https://res.cloudinary.com/dztz492su/image/upload/v1729301295/books/n09zznudbktfv9hrntbw.png" />
                       <img
                         src="https://res.cloudinary.com/dztz492su/image/upload/v1728320654/books/h4oczmxrpfnvsf1vcezc.png"
                         alt="Profile picture"
@@ -91,7 +90,7 @@ export default function Component() {
                     <PostInput />
                   </div>
                 )} */}
-                <div className="p-2 sticky z-50 bg-black bg-opacity-75 text-xs top-0 flex justify-evenly">
+                <div className="p-2 sticky z-50 c-1 bg-opacity-75 text-xs top-0 flex justify-evenly">
                   {sections.map(({ id, label }) => (
                     <div key={id} onClick={() => setsectionChoose(id)}>
                       {label}

@@ -43,7 +43,7 @@ const StickersSection = ({ idBadget }: BadgesSectionProps) => {
   return (
     <div>
       <div className='w-full p-8 flex flex-col rounded-xl'>
-        <label htmlFor="main" className='text-xl p-1 relative flex justify-center items-center text-slate-200 opacity-80 bg-[#04030e] rounded-t-sm'>
+        <label htmlFor="main" className='text-xl p-1 relative flex justify-center items-center text-slate-200 c-1  rounded-t-sm'>
           Title
           <div
             onClick={() => setDropdown(!dropdown)}

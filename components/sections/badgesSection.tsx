@@ -43,7 +43,7 @@ const BadgesSection = ({ idBadget }: BadgesSectionProps) => {
   return (
     <div>
       <div className='w-full p-8 flex flex-col rounded-xl'>
-        <label htmlFor="main" className='text-xl p-1 relative flex justify-center items-center text-slate-200 opacity-80 bg-[#04030e] rounded-t-sm'>
+        <label htmlFor="main" className='text-xl p-1 relative flex justify-center items-center text-slate-200 c-1 rounded-t-sm'>
           Title
           <div
             onClick={() => setDropdown(!dropdown)}
@@ -53,7 +53,7 @@ const BadgesSection = ({ idBadget }: BadgesSectionProps) => {
         </label>
         <div
           onClick={() => setDropdown(true)}
-          className={`text-sm p-4 bg-[#000000] bg-opacity-60 overflow-hidden ${dropdown ? '' : 'max-h-[550px] select-none'} text-slate-400 min-h-[450px] rounded-b-sm flex`}>
+          className={`text-sm p-4 c-2 overflow-hidden ${dropdown ? '' : 'max-h-[550px] select-none'} text-slate-400 min-h-[450px] rounded-b-sm flex`}>
           
           <div className="grid-b p-8">
             {datafetched?.badgets?.map((image, index) => (
