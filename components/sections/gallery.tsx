@@ -49,7 +49,7 @@ const GalleryPage = () => {
   return (
     <div className="w-full bg-opacity-10 p-6 bg-[#000000] min-h-screen">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-        {first.map((x, i) => (
+        {first.map((x) => (
           <div
 
             key={x._id} className=" bg-opacity-90 hover:bg-opacity-10 flex flex-col   overflow-hidden transform transition duration-300">
