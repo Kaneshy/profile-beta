@@ -20,7 +20,6 @@ const GalleryPage = () => {
   const [first, setfirst] = useState<Badge[]>([])
   const [imgpopup, setimgpopup] = useState(false)
   const [imgPopUp, setimgPopUp] = useState<string[]>([])
-  const [currentImg, setcurrentImg] = useState(0)
 
   const popupRef = useRef<HTMLDivElement>(null);
 
@@ -38,7 +37,6 @@ const GalleryPage = () => {
   const handlePopUpImg = (url: string[], index: number) => {
     setimgPopUp(url)
     setimgpopup(true)
-    setcurrentImg(index)
   }
   const handleOverlayClick = (e: React.MouseEvent<HTMLElement>) => {
     // Close the popup if the click is outside the image
