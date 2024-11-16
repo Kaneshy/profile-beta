@@ -34,7 +34,7 @@ const GalleryPage = () => {
   }, [])
 
 
-  const handlePopUpImg = (url: string[], index: number) => {
+  const handlePopUpImg = (url: string[]) => {
     setimgPopUp(url)
     setimgpopup(true)
   }
@@ -54,7 +54,7 @@ const GalleryPage = () => {
 
             key={x._id} className=" bg-opacity-90 hover:bg-opacity-10 flex flex-col   overflow-hidden transform transition duration-300">
             <img
-              onClick={() => handlePopUpImg(x.url, i)}
+              onClick={() => handlePopUpImg(x.url)}
               src={x.url[0]}
               alt={x.name}
               className="flex-1 object-cover rounded-lg w-full  h-auto hover:shadow-lg "
